@@ -1,0 +1,4 @@
+# Message
+# ========================= Matiere =========================
+required.matiere.code = Matter code is required.
+required.matiere.intitule = Matter title is required.

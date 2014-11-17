@@ -1,0 +1,122 @@
+# Message
+
+# ===================================== Global ======================================
+code = Code
+intitule = Intitulé
+batiment = Bâtiment
+numero = Numéro
+capacite = Capacité
+dateDebut = Date de début
+dateFin = Date de fin
+dateCreneau = Date du creneau
+heureDebut = Heure de début
+heureFin = Heure de fin
+poste = Poste
+description = Description
+prenom = Prénom
+nom = Nom
+dateNaissance = Date de naissance
+login = Login
+email = E-mail
+password = Mot de passe
+typeCreneau = Type de creneau
+photo = Photo
+coef = Coefficient
+note = Note
+periode = Période
+annee = Année
+codeMatiere = Code Matière
+matiere = Matière
+salle = Salle
+group = Groupe
+emploiDuTemps = Emploi du temps
+creneauHoraire = Creneau horaire
+administrateur = Administrateur
+professeur = Professeur
+eleve = Élève
+fichier = Fichier
+
+Eleves = Les élèves
+Administrateurs = Les administrateurs
+Attachments = Les fichiers liés
+CreneauHoraires = Les créneaux horaires
+EleveMatieres = L'association élèves-matières
+Filieres = Les filières
+Groups = Les groupes
+Matieres = Les matières
+Notes = Les notes
+Professeurs = Les professeurs
+ProfesseurMatieres = L'association professeurs-matières
+Rights = La gestion de droits
+Salles = Les salles
+Users = Les utilisateurs
+UserRights = L'association droits-utilisateurs
+EmploiDuTempss = Emploi du temps.
+
+# =================================== Matiere =======================================
+required.matiere.code = Le code de la matière est obligatoire.
+required.matiere.intitule = L'intitulé de la matière est obligatoire.
+
+# =================================== Salle =========================================
+required.salle.code = Le code de la salle est obligatoire.
+required.salle.batiment = Le batiment de la salle est obligatoire.
+
+# ========================= Group ===================================================
+required.group.code = Le code du groupe est obligatoire.
+required.group.numero = Le numéro du groupe est obligatoire.
+required.group.capacite = Le nombre de personne maximum du groupe est obligatoire.
+
+# =============================== EMPLOI_DU_TEMPS ===================================
+required.emploiDuTemps.dateDebut = La date de début de l'emploi du temps est obligatoire.
+required.emploiDuTemps.dateFin = La date de fin de l'emploi du temps est obligatoire.
+emploiDuTemps.dateDebut = Date de début
+emploiDuTemps.dateFin = Date de fin
+
+# =============================== CRENEAU_HORAIRE ===================================
+required.creneauHoraire.dateCreneau = La date du creneau est obligatoire.
+required.creneauHoraire.heureDebut = L'heure de début est obligatoire.
+required.creneauHoraire.heureFin = L'heure de fin est obligatoire.
+valid.creneauHoraire.heureDebut = L'heure de début n'est pas valide.
+valid.creneauHoraire.heureFin = L'heure de fin n'est pas valide.
+
+# ==================================== PERSON =======================================
+required.person.prenom = Le prénom est obligatoire.
+required.person.nom = Le nom est obligatoire.
+required.person.dateNaissance = La date de naissance est obligatoire.
+required.person.login = Le login est obligatoire.
+required.person.email = L'email est obligatoire.
+required.person.password = Le mot de passe est obligatoire.
+valid.person.email = Votre email n'est pas valide.
+valid.person.password = Le mot de passe n'est pas valide.
+valid.person.password = Le mot de passe doit contenir au moins 8 caractères.
+valid.person.login = Le login doit contenir au moins 6 caractère
+unique.person.login = Ce login est déjà utilisé.
+unique.person.email = Cet e-mail est déjà utilisé.
+
+# ================================= ADMINISTRATEUR ==================================
+required.administrateur.poste = Le poste de l'administrateur est réquis.
+
+# ================================= ÉLÈVE ==================================
+required.eleve.filiere = La filière de l'élève est réquis.
+required.eleve.group = Le groupe de l'élève est obligatoire.
+
+# ==================================== NOTE =========================================
+required.note.coef = Le coefficient est obligatoire.
+required.note.note = La note est obligatoire.
+required.note.periode = La période est obligatoire.
+required.note.annee = L'année est réquise
+required.note.codeMatiere = Le code de la matière est obligatoire.
+required.note.eleve = L'élève est obligatoire.
+
+# ==================================== FILIERE =======================================
+required.filiere.code = Le code de la filière est obligatoire.
+required.filiere.nom = Le nom de la filière est obligatoire.
+required.filiere.description = La description de la filière est obligatoire.
+
+# ==================================== ATTACHEMENT ===================================
+required.attachment.fichier = Le fichier est obligatoire.
+required.attachment.eleve = Il faut choisir au moins un élève ou les autres champs.
+required.attachment.administrateur = Il faut choisir au moins un administrateur ou les autres champs.
+required.attachment.professeur = Il faut choisir au moins un professeur ou les autres champs.
+required.group = Il faut choisir au moins un élément du group.
+

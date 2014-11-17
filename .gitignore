@@ -2,6 +2,7 @@
 bin/
 /db
 .eclipse
+eclipse
 /lib/
 /logs/
 /modules

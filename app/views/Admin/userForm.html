@@ -1,0 +1,94 @@
+#{extends 'CRUD/layout.html' /}
+#{ifnot user?.id}
+
+<div id="crudShow" class="&{'Users'}">
+
+    <h2 id="crudShowTitle">&{'crud.show.title', 'User'}</h2>
+
+    <div class="objectForm">
+        <h3>Write, <span>a new user</span></h3>
+        #{/ifnot}
+        #{else}
+        <h3>Edit, <span>this user</span></h3>
+        #{/else}
+
+        #{form @save()}
+
+        #{ifErrors}
+        <p class="error">
+            Please correct these errors.
+        </p>
+        #{/ifErrors}
+
+        <input type="hidden" name="user.id" value="${user?.id}"/>
+        <input type="hidden" name="oldPwd" value="${user?.password}"/>
+
+        <p>
+            #{field 'user.firstName'}
+            <label for="${field.id}">First name*:</label>
+            <input id="${field.id}" type="text" name="${field.name}" 
+                   value="${field.value}" />
+            <span class="error">#{error 'user.firstName'/}</span>
+            #{/field}
+        </p>
+
+        <p>
+            #{field 'user.lastName'}
+            <label for="${field.id}">Last name*:</label>
+            <input id="${field.id}" type="text" name="${field.name}" 
+                   value="${field.value}" />
+            <span class="error">#{error 'user.lastName'/}</span>
+            #{/field}
+        </p>
+
+        <p>
+            #{field 'user.phone'}
+            <label for="${field.id}">Phone*:</label>
+            <input id="${field.id}" type="text" name="${field.name}" 
+                   value="${field.value}" />
+            <span class="error">#{error 'user.phone'/}</span>
+            #{/field}
+        </p>
+
+        <p>
+            #{field 'user.login'}
+            <label for="${field.id}">Login*:</label>
+            <input id="${field.id}" type="text" name="${field.name}" 
+                   value="${field.value}" />
+            <span class="error">#{error 'user.login'/}</span>
+            #{/field}
+        </p>
+
+        <p>
+            #{field 'user.password'}
+            <label for="${field.id}">Password*:</label>
+            <input id="${field.id}" type="password" name="${field.name}" 
+                   value="${field.value}" />
+            <span class="error">#{error 'user.password'/}</span>
+            #{/field}
+        </p>
+
+        <p>
+            #{field 'confirm'}
+            <label for="${field.id}">Confirm:</label>
+            <input id="${field.id}" type="password" name="${field.name}" 
+                   value="${field.value}" />
+            <span class="error">#{error 'confirm'/}</span>
+            #{/field}
+        </p>
+
+        <p>
+            #{field 'phones'}
+            <label for="${field.id}">Enter others phone numbers:</label>
+            <input id="${field.id}" type="text" size="50" 
+                   name="${field.name}" value="${user?.phones?.join(' ')}" />
+            #{/field}
+        </p>
+
+        <p>
+            <input class="btn btn-u" type="submit" value="Create" />
+        </p>
+
+        #{/form}
+    </div>
+</div>
